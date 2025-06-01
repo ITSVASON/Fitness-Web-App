@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Fitness Trainer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+  </nav>
+    <h1>Virtual Fitness Trainer</h1>
+    <p id="motivationalText"></p>
+  </header>
+
+  <main>
+    <section id="planSection">
+      <h2>Create Your Plan</h2>
+      <form id="planForm">
+        <label for="goal">Your Goal:</label>
+        <input type="text" id="goal" name="goal" placeholder="e.g., Lose weight" required>
+        
+        <label for="exercises">Choose Exercises:</label>
+        <select id="exercises" name="exercises" multiple required>
+          <option value="Push-ups">Push-ups</option>
+          <option value="Squats">Squats</option>
+          <option value="Jumping Jacks">Jumping Jacks</option>
+          <option value="Plank">Plank</option>
+          <option value="Lunges">Lunges</option>
+        </select>
+
+        <button type="submit">Create Plan</button>
+      </form>
+    </section>
+
+    <section id="exerciseSection">
+      <h2>Your Exercises</h2>
+      <ul id="exerciseList"></ul>
+      <button id="startWorkoutButton">Start Workout</button>
+
+    </section>
+
+    <section id="timerSection">
+      <h2>Timer</h2>
+      <p id="timerDisplay">Ready to start?</p>
+    </section>
+
+    <section id="progressSection">
+      <h2>Progress</h2>
+      <div id="progressBar">
+        <div id="progressChart">0%</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

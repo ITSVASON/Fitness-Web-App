@@ -1,0 +1,146 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color:#f5f5f5; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('foto.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+html {
+  overflow: -moz-scrollbars-none; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+header {
+  background:linear-gradient(90deg, #ff7e5f, #feb47b); 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-shadow:  0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+main {
+  width: 90%;
+  max-width: 600px; 
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);  
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+label {
+  font-size: 1.1em;
+  color: #cfcfcf;
+}
+
+input, select, button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color:#fff;
+  font-size: 1em;
+}
+
+button {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background:linear-gradient(90deg, #feb47b, #ff7e5f); 
+  color: #000; 
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#timerDisplay {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: white;
+}
+
+#progressBar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 20px 0;
+  overflow: hidden;
+  height: 25px;
+}
+
+#progressChart {
+  width: 0%;
+  height: 100%;
+  background:linear-gradient(90deg, #ff7e5f, #feb47b);
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out;
+}
+nav a {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 16px; 
+  margin: 0 15px; 
+}
+
+nav {
+  background: none; 
+  text-align: right; 
+  padding: 15px;
+}
